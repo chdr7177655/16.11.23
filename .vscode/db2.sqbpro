@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="D:/tichnut/16.11.23/.vscode/db2.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="179"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="0,0:"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 4"> CREATE TABLE COMPANY(
+ ID INT PRIMARY KEY NOT NULL,
+ NAME TEXT NOT NULL,
+ AGE INT NOT NULL,
+ ADDRESS CHAR(50),
+ SALARY REAL
+);</sql><sql name="SQL 6">INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (1, 'Paul', 32, 'California', 20000.00 );
+INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (2, 'Allen', 25, 'Texas', 15000.00 );
+INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (3, 'Teddy', 23, 'Norway', 20000.00 );
+INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (4, 'Mark', 25, 'Rich-Mond ', 65000.00 );
+INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (5, 'David', 27, 'Texas', 85000.00 );
+INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (6, 'Kim', 22, 'South-Hall', 45000.00 );
+</sql><sql name="SQL 7">UPDATE COMPANY SET  SALARY = SALARY*2 WHERE AGE &gt; 26</sql><sql name="SQL 8">DELETE FROM COMPANY WHERE ADDRESS like id = 4</sql><sql name="SQL 9">-- get
+SELECT * FROM COMPANY;
+-- get/id
+SELECT * FROM COMPANY WHERE id = 7;
+--post
+INSERT INTO COMPANY (id, NAME, AGE, ADDRESS, SALARY)
+--put/id
+UPDATE COMPANY SET NAME =, 
+</sql><sql name="SQL 10">DROP TABLE COMPANY</sql><current_tab id="3"/></tab_sql></sqlb_project>
